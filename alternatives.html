@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10120f" />
+    <meta name="description" content="Couchfront compared with Playnite and Steam Big Picture, including what it does and what it still lacks." />
+    <title>Couchfront vs Playnite vs Steam Big Picture</title>
+    <link rel="canonical" href="https://kepatotorica.github.io/couchfront/alternatives.html" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Couchfront" />
+    <meta property="og:url" content="https://kepatotorica.github.io/couchfront/alternatives.html" />
+    <meta property="og:title" content="Couchfront vs Playnite vs Steam Big Picture" />
+    <meta property="og:description" content="What Couchfront does, what it does not do yet, and how it compares with Playnite and Steam Big Picture." />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is this a Playnite replacement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. It is a direct alternative to Playnite. It does less today, but it has built-in speed controls, a process killer, couch wake tools, focus guarding, universal controller support, and optional Steam sync. If you need custom plugins, deep metadata, or emulator management, Playnite does more."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I still need the other launchers installed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Games need their store's client for DRM, updates, and cloud saves. The app just means you don't have to open them to find and launch your games."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work on Steam Deck or Linux?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It's a Windows application that reads Windows registry entries and store manifests, and writes to Steam's Windows shortcut files. On Deck, the equivalent path is Steam's own library plus Heroic for Epic and GOG titles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. It's a portable Windows executable; the only optional third-party components are the free ViGEmBus and HidHide drivers, and a SteamGridDB API key if you want artwork fetched automatically."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="shell">
+      <a class="brand" href="index.html"><img src="./favicon.png" alt="" />COUCHFRONT</a>
+      <nav class="nav" aria-label="Main navigation"><a class="nav-secondary" href="index.html#features">What it does</a><a href="why-one-launcher.html">Why this exists</a><a href="steam-big-picture.html">Steam shortcuts</a><a href="alternatives.html" aria-current="page">Alternatives</a><a class="nav-cta" href="index.html#download">Download</a></nav>
+    </header>
+    <main>
+      <div class="shell page-hero">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Alternatives</span></nav>
+        <div class="eyebrow">The competition</div>
+        <h1>How it compares.</h1>
+        <p class="intro">Couchfront is a direct alternative to Playnite and Steam Big Picture. It does some things they do not, and it is missing features they have. The table below is the short version.</p>
+      </div>
+      <section class="page-body">
+        <div class="shell table-section">
+          <h2 id="table">At a glance</h2>
+          <div class="table-wrap">
+            <table class="compare">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col" class="col-highlight">Couchfront</th>
+                  <th scope="col">Playnite</th>
+                  <th scope="col">Steam Big Picture</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Price</th><td class="col-highlight">Free</td><td>Free, open source</td><td>Free</td></tr>
+                <tr><th scope="row">Store scanning</th><td class="col-highlight">9 stores plus custom folders</td><td>Yes, via plugins</td><td>Steam only</td></tr>
+                <tr><th scope="row">Emulator libraries</th><td class="col-highlight no">No</td><td>Yes, via plugins</td><td class="no">No</td></tr>
+                <tr><th scope="row">Custom plugins</th><td class="col-highlight no">No, themes are built in</td><td>Yes</td><td class="no">No</td></tr>
+                <tr><th scope="row">Metadata</th><td class="col-highlight">Artwork from SteamGridDB</td><td>Deep metadata via plugins</td><td>Store data for Steam games</td></tr>
+                <tr><th scope="row">Couch / controller UI</th><td class="col-highlight">Fullscreen mode with universal controller support in games and the launcher</td><td>Fullscreen mode with controller support in the launcher, but not in games</td><td>Big Picture</td></tr>
+                <tr><th scope="row">Mouse mode from the couch</th><td class="col-highlight">Yes, controller drives the system cursor</td><td class="no">No, needs a separate desktop tool</td><td class="no">No</td></tr>
+                <tr><th scope="row">Sync games into Steam</th><td class="col-highlight">Yes, optional</td><td class="no">No</td><td>Steam games only</td></tr>
+                <tr><th scope="row">Speed controls</th><td class="col-highlight">Yes</td><td class="no">No</td><td class="no">No</td></tr>
+                <tr><th scope="row">Process killer</th><td class="col-highlight">Yes</td><td class="no">No</td><td class="no">No</td></tr>
+                <tr><th scope="row">Couch wake and idle handling</th><td class="col-highlight">Yes</td><td class="no">No</td><td class="no">No</td></tr>
+                <tr><th scope="row">Store purchases and downloads</th><td class="col-highlight no">No</td><td>No storefront of its own</td><td>Steam store only</td></tr>
+                <tr><th scope="row">Platforms</th><td class="col-highlight">Windows</td><td>Windows</td><td>Windows, macOS, Linux, Deck</td></tr>
+                <tr><th scope="row">Setup effort</th><td class="col-highlight">Low</td><td>Medium to high</td><td>Extremely tedious for non-Steam games</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="shell layout">
+          <article class="prose">
+            <p>The row that matters most is usually the couch UI, because that is what you use every day.</p>
+
+            <h2 id="does">What it does differently</h2>
+            <ul>
+              <li><strong>Built-in speed controls.</strong> Fast-forward and slow motion for single-player games, without touching game files.</li>
+              <li><strong>Process Killer.</strong> Ends a stuck game's process tree without opening Task Manager.</li>
+              <li><strong>Couch wake and idle handling.</strong> Works with a dedicated Xbox or PlayStation USB dongle, and can put idle Bluetooth pads to sleep.</li>
+              <li><strong>Optional Steam Big Picture sync.</strong> Adds games to Steam as shortcuts with artwork. The launcher works without it.</li>
+              <li><strong>Global controller override.</strong> Mirrors most non-Xbox pads into virtual Xbox 360 controllers system-wide.</li>
+              <li><strong>Mouse mode.</strong> Hold Select + B for one second and the pad becomes a mouse: left stick moves the cursor, right stick scrolls, A and B click, and Start + Select opens Task View. It works on the whole desktop, not just inside the launcher, so you can fix a game or install something without reaching for a mouse.</li>
+            </ul>
+
+            <h2 id="doesnt">What it does not do</h2>
+            <ul>
+              <li><strong>No emulator platform library.</strong> Playnite supports emulators through plugins; Couchfront does not.</li>
+              <li><strong>No custom plugins.</strong> Playnite has a plugin ecosystem. Couchfront ships with built-in themes instead.</li>
+              <li><strong>Less metadata.</strong> Artwork comes from SteamGridDB, but there is no rich metadata library for descriptions, reviews, or playtime across stores.</li>
+              <li><strong>No store purchases or downloads yet.</strong> This may come later if enough people want it.</li>
+              <li><strong>Windows only.</strong> No macOS, Linux, Steam Deck, or Android.</li>
+            </ul>
+            <p>Some of these may get support later if enough people care. For now, I am starting with the features I like.</p>
+
+            <h2 id="playnite">Playnite</h2>
+            <p>Playnite is the closer comparison. It is a full library manager with plugins, themes, deep metadata, and emulator support. It also takes more configuration.</p>
+            <p>Two differences matter more than the feature lists. First, focus: Playnite does not stop Steam from stealing focus, so a game launched through it can still hand you back to Steam's window. Games launched through Playnite also do not inherit Steam's overlay or controller setup.</p>
+            <p>Second, controllers: Playnite gives you fullscreen mode with controller support, but that support is per game and per setup. It does not map every pad into one uniform controller for the whole system.</p>
+            <p>That gap shows up fastest the moment the couch session leaves the launcher. Playnite can browse itself with a pad, but it cannot turn the pad into a mouse for Windows, so a popup, a launcher update, or a game that starts windowed means getting up for the mouse. Couchfront has mouse mode built into the same controller layer: hold Select + B for a second and the sticks move the real cursor with A and B clicking, anywhere on the desktop, with Start + Select opening Task View to pick the next window.</p>
+            <p>Couchfront is built around those two problems. It holds focus so Steam and store launchers cannot take the screen back, and it mirrors most pads into virtual Xbox 360 controllers system-wide, so every game, old or new, sees the same universal controller, with mouse mode on the same chord. If plugins, themes, and emulator libraries matter more than that, Playnite is the better choice today.</p>
+
+            <h2 id="steam">Steam Big Picture</h2>
+            <p>Steam Big Picture works well if your library is mostly on Steam. It already handles Steam games and their artwork, updates, achievements, and cloud saves.</p>
+            <p>For imported games, Big Picture only gets a shortcut and whatever artwork you add. Couchfront can keep those shortcuts and artwork accurate, but it cannot add Steam cloud saves, achievements, or updates to a game Steam did not sell you.</p>
+
+            <h2 id="others">Other options</h2>
+            <dl>
+              <dt>Xbox Mode</dt>
+              <dd>Windows 11's full screen experience. Best for Game Pass and Microsoft Store titles, less so for a library scattered across other stores.</dd>
+              <dt>GOG Galaxy 2.0</dt>
+              <dd>Good for GOG games, but third-party store integrations have become flaky. Keep it for GOG; don't build your setup on it.</dd>
+              <dt>Heroic Games Launcher</dt>
+              <dd>Open source and focused on Epic, GOG, and Amazon. Strong on Linux and Steam Deck, usable on Windows. Not a couch frontend and not a Steam sync tool.</dd>
+              <dt>ES-DE</dt>
+              <dd>An open-source emulation frontend. Good for a retro library, not for modern storefront games.</dd>
+            </dl>
+
+            <h2 id="faq">Common questions</h2>
+            <div class="faq">
+              <details>
+                <summary>Is this a Playnite replacement?</summary>
+                <p>Yes. It is a direct alternative to Playnite. It does less today, but it has built-in speed controls, a process killer, couch wake tools, focus guarding, universal controller support, and optional Steam sync. If you need custom plugins, deep metadata, or emulator management, Playnite does more.</p>
+              </details>
+              <details>
+                <summary>Do I still need the other launchers installed?</summary>
+                <p>Yes. Games need their store's client for DRM, updates, and cloud saves. The app just means you don't have to open them to find and launch your games.</p>
+              </details>
+              <details>
+                <summary>Does it work on Steam Deck or Linux?</summary>
+                <p>No. It's a Windows application that reads Windows registry entries and store manifests, and writes to Steam's Windows shortcut files. On Deck, the equivalent path is Steam's own library plus Heroic for Epic and GOG titles.</p>
+              </details>
+              <details>
+                <summary>Is it free?</summary>
+                <p>Yes. It's a portable Windows executable; the only optional third-party components are the free ViGEmBus and HidHide drivers, and a SteamGridDB API key if you want artwork fetched automatically.</p>
+              </details>
+            </div>
+
+            <h2 id="next">Keep reading</h2>
+            <div class="next-pages">
+              <a class="next-page" href="why-one-launcher.html"><span>Problem</span><strong>Why this exists</strong><p>A direct alternative to Playnite, and what still needs work.</p></a>
+              <a class="next-page" href="steam-big-picture.html"><span>Steam</span><strong>What Big Picture misses</strong><p>What imported games never get in Steam.</p></a>
+              <a class="next-page" href="index.html#download"><span>Download</span><strong>Try it</strong><p>Free portable .exe for Windows 10 and 11.</p></a>
+            </div>
+          </article>
+          <aside class="toc" aria-label="On this page">
+            <h2>On this page</h2>
+            <ol>
+              <li><a href="#table">At a glance</a></li>
+              <li><a href="#does">What it does differently</a></li>
+              <li><a href="#doesnt">What it does not do</a></li>
+              <li><a href="#playnite">Playnite</a></li>
+              <li><a href="#steam">Steam Big Picture</a></li>
+              <li><a href="#others">Other options</a></li>
+              <li><a href="#faq">Common questions</a></li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer><div class="shell"><span>Couchfront</span><nav class="footer-nav" aria-label="Footer"><a href="why-one-launcher.html">Why this exists</a><a href="steam-big-picture.html">Steam shortcuts</a><a href="alternatives.html">Alternatives</a><a href="demo/">Demo</a><a href="index.html#download">Download</a></nav><span>Built for Windows PC gaming.</span></div></footer>
+  </body>
+</html>
