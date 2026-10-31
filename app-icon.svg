@@ -8,27 +8,16 @@
   <circle cx="512" cy="512" r="470" fill="url(#badge)"/>
   <circle cx="512" cy="512" r="470" fill="none" stroke="#d6bc98" stroke-opacity="0.55" stroke-width="33"/>
 
-  <!-- A big, plump couch filling most of the badge: separated parts so the
-       beige gaps still read as backrest / arms / seat / legs at 32px. -->
-  <g fill="#7b4a2b">
-    <!-- backrest -->
-    <rect x="246" y="284" width="532" height="200" rx="78" />
-    <!-- arms, taller than the seat and rounded on top -->
-    <rect x="150" y="412" width="138" height="270" rx="68" />
-    <rect x="736" y="412" width="138" height="270" rx="68" />
-    <!-- seat -->
-    <rect x="296" y="516" width="432" height="140" rx="50" />
-    <!-- legs -->
-    <rect x="320" y="640" width="54" height="100" rx="26" />
-    <rect x="650" y="640" width="54" height="100" rx="26" />
-  </g>
-
-  <!-- A controller resting on the seat, cut out of the brown in the badge beige -->
-  <rect x="430" y="552" width="164" height="70" rx="35" fill="#efe0c9" />
-  <g fill="#7b4a2b">
-    <rect x="456" y="581" width="36" height="12" rx="6" />
-    <rect x="468" y="569" width="12" height="36" rx="6" />
-    <circle cx="548" cy="578" r="9" />
-    <circle cx="570" cy="596" r="9" />
+  <!-- The header's Sofa glyph, drawn on the icon's own 24-unit grid so the
+       proportions match the in-app mark. Stroke is a touch heavier than
+       Lucide's 2 so the couch still reads at 32px. -->
+  <g transform="translate(512 512) scale(31) translate(-12 -12)"
+     fill="none" stroke="#7b4a2b" stroke-width="2.2"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/>
+    <path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/>
+    <path d="M4 18v2"/>
+    <path d="M20 18v2"/>
+    <path d="M12 4v9"/>
   </g>
 </svg>
